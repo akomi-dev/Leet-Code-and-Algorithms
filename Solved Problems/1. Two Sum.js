@@ -1,5 +1,3 @@
-// https://leetcode.com/problems/two-sum/
-
 // Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
 
 // You may assume that each input would have exactly one solution, and you may not use the same element twice.
@@ -21,9 +19,12 @@ const twoSum = (nums, target) => {
 }
 
 
-// Tests
-// (nums, target)
-// [2,7,11,15], 9
-// [3,2,4], 6
-// [3,3], 6
-console.log(twoSum([3,3], 6))
+tests = [
+    [[2,7,11,15], 9],
+    [[3,2,4], 6],
+    [[3,3], 6]
+]
+
+tests.forEach(test => {
+    console.log(twoSum(test[0], test[1]))
+});
